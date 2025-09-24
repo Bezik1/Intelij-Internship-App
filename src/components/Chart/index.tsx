@@ -2,7 +2,7 @@ import { Cell, Legend, Pie, PieChart, Tooltip } from "recharts"
 import CustomLegend from "../CustomLegend"
 
 const Chart = ({ data, colors } : { data: any[], colors: string[] }) =>(
-    <PieChart width={650} height={750} >
+    <PieChart width={650} height={750} className="mb-[15vh]" >
         <Pie
             data={data}
             dataKey="value"
