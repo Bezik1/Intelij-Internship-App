@@ -16,7 +16,7 @@ Intelij Internship App was made in Vite + React + TypeScript. For styling im usi
 ![Banner](./public/assets/screens/charts_screen.png)
 
 ### Loading Screen
-![Banner](./public/assets/screens/questions_screen.png)
+![Banner](./public/assets/screens/loading_screen.png)
 
 ### Error Screen
 ![Banner](./public/assets/screens/error_screen.png)
