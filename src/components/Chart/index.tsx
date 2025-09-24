@@ -10,9 +10,9 @@ const Chart = ({ data, colors } : { data: any[], colors: string[] }) =>(
             cx="50%"
             cy="50%"
             outerRadius={200}
-            label={({ name, percent }) => `${(Number(percent) * 100).toFixed(0)}%`}
+            label={({ _, percent }) => `${(Number(percent) * 100).toFixed(0)}%`}
         >
-        {data.map((entry, index) => (
+        {data.map((_, index) => (
             <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
         ))}
         </Pie>

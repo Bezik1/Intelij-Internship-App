@@ -14,7 +14,7 @@ const QuestionsPage = () =>{
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const { questions: globalStateQuestions } = useSelector((state: RootState) => state.questionsReducer)
-    const [questions, setQuestions] = useState<IQuestion[]>(globalStateQuestions)
+    const [questions, _] = useState<IQuestion[]>(globalStateQuestions)
     const [openFilters, setOpenFilters] = useState(true)
     const [filters, setFilters] = useState<string[]>([])
 
@@ -46,8 +46,7 @@ const QuestionsPage = () =>{
                                     <div
                                         key={category}
                                         className={`special-card whitespace-nowrap border-2 h-10 rounded-2xl p-1 cursor-pointer transform transition-transform duration-300 ease-out
-                                            hover:-translate-y-2
-                                            ${filters.includes(category) ? "-translate-y-2" : ""}`}
+                                            ${(filters.includes(category) || filters.length == 0) ? "opacity-100" : "opacity-60"}`}
                                         style={{ backgroundColor: CATEGORY_FILTER_COLORS[i % CATEGORY_FILTER_COLORS.length] }}
                                         onClick={() =>
                                             filters.includes(category)
