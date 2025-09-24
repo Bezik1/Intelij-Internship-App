@@ -29,8 +29,8 @@ const ChartsPage = () => {
 
     return (
         <div className="flex flex-col w-full h-screen items-center justify-center">
-            <h1 className="special-text">Questions Charts</h1>
-            <div className="flex w-[100%] items-center justify-between relative">
+            <h1 className="text-8xl mt-[20vh]">Questions Charts</h1>
+            <div className="flex w-[100%] items-center justify-between relative -mt-[10vh]">
                 <Chart data={dataByCategory} colors={CATEGORY_CHART_COLORS} />
 
                 <div className="absolute inset-0 mb-[5vw] flex justify-center items-center pointer-events-none">
