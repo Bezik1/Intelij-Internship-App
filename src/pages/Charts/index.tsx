@@ -36,7 +36,7 @@ const ChartsPage = () => {
                 <div className="absolute inset-0 mb-[5vw] flex justify-center items-center pointer-events-none">
                     <img
                         className="w-1/3 rounded-4xl -z-1"
-                        src="assets/images/base.webp"
+                        src="assets/images/charts.webp"
                     />
                 </div>
 
