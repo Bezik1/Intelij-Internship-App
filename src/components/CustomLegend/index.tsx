@@ -1,7 +1,7 @@
 const CustomLegend = ({ payload }: any) => (
     <div
         style={{
-            marginTop: 50,
+            marginTop: -225,
             marginLeft: 150,
             width: 400,
             height: 150,
