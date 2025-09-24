@@ -42,7 +42,11 @@ export const fetchQuestions = createAsyncThunk<
 const questionsSlice = createSlice({
     name: "questions",
     initialState,
-    reducers: {},
+    reducers: {
+        setError: (state, action: PayloadAction<{ status: string, message: string }>) =>{
+            state.error = action.payload
+        }
+    },
     extraReducers: builder =>{
         builder
             .addCase(fetchQuestions.pending, state => {
@@ -59,5 +63,7 @@ const questionsSlice = createSlice({
             });
     }
 })
+
+export const { setError } = questionsSlice.actions
 
 export default questionsSlice.reducer;

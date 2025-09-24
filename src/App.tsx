@@ -5,6 +5,8 @@ import { pageTransition } from './animation/routes';
 import HomePage from "./pages/Home"
 import LoadingPage from './pages/Loading';
 import QuestionsPage from './pages/Questions';
+import ChartsPage from './pages/Charts';
+import ErrorPage from './pages/Error';
 
 const App = () => {
   const location = useLocation();
@@ -37,6 +39,22 @@ const App = () => {
               </motion.div>
             }
           />
+        <Route
+          path="/charts"
+          element={
+            <motion.div {...pageTransition}>
+              <ChartsPage />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/error"
+          element={
+            <motion.div {...pageTransition}>
+              <ErrorPage />
+            </motion.div>
+          }
+        />
       </Routes>
       </AnimatePresence>
     </div>
