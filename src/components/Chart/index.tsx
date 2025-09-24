@@ -10,6 +10,8 @@ const Chart = ({ data, colors } : { data: any[], colors: string[] }) =>(
             cx="50%"
             cy="50%"
             outerRadius={200}
+
+            // @ts-ignore
             label={({ _, percent }) => `${(Number(percent) * 100).toFixed(0)}%`}
         >
         {data.map((_, index) => (
