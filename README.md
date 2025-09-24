@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# Intelij Internship App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 💡 Overview
 
-Currently, two official plugins are available:
+Intelij Internship App was made in Vite + React + TypeScript. For styling im using tailwind and for animations framer-motion. State managment problem was solved by using redux.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🗒️ Pages
 
-## React Compiler
+### Home Screen
+![Banner](./public/assets/screens/home_screen.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Questions Screen
+![Banner](./public/assets/screens/questions_screen.png)
 
-## Expanding the ESLint configuration
+### Charts Screen
+![Banner](./public/assets/screens/charts_screen.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Loading Screen
+![Banner](./public/assets/screens/questions_screen.png)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Error Screen
+![Banner](./public/assets/screens/error_screen.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🗒️ Features
+* Redux based state managment system;
+* Clarity in design;
+* Animations created in framer-motion;
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Command Tools
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+To work with this project locally or in a containerized environment, use the following commands:
+```bash
+npm run build # builds the project
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm run dev # run the project in developer mode
+````
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧠 Tech Stack
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,react,typescript,git,redux,tailwind" />
+  </a>
+</p>
+ 
