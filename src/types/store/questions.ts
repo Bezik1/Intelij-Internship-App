@@ -4,6 +4,7 @@ export interface IQuestion {
     question: string,
     correct_answer: string
     incorrect_answers: [string, string, string] | [string]
+    category: string
 }
 
 export type QuestionsState = {

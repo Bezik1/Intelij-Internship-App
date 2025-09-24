@@ -3,7 +3,7 @@ import "./index.css"
 import { fetchQuestions } from "../../state/questions/questionsSlice"
 import type { AppDispatch, RootState } from "../../state/store"
 import { useNavigate } from "react-router-dom"
-import { FetchBlob } from "../../components/svg/FetchBlob"
+import { FetchBlob } from "../../components/svg/blobs/FetchBlob"
 
 const HomePage = () =>{
     const navigate = useNavigate()

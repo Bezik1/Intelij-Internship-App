@@ -8,7 +8,7 @@ const LoadingPage = () =>{
         <div className="flex flex-col w-full h-screen items-center justify-center">
             <img
                 className="w-2/5 rounded-4xl"
-                src="assets/images/base.webp"
+                src="assets/images/loading.webp"
             />
             <h1 className="text-7xl flex items-center gap-2">
                 Loading
